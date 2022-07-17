@@ -39,18 +39,18 @@ public class CrudDocumentario extends Catalogo{
 }
 
 
-@Override
+	@Override
 	public void visualizar() {
-		//( String tipo, int duracao
-		
+	
 		for (Documentario exibir: listDocumentario ) {
+			System.out.println("**************************************************");
 			System.out.print("Titulo: "+exibir.getTitulo());
 			System.out.print("\nGenero: "+exibir.getGenero());
 			System.out.print("\nClassificacao indicativa: "+exibir.getClassificacaoindicativa());
 			System.out.print("\nSinopse: "+exibir.getSinopse());
 			System.out.print("\nTipo: "+exibir.getTipo());
 			System.out.print("\nDuracao"+exibir.getDuracao());		
-			
+			System.out.println("\n**************************************************");
 		}
 		
 	
