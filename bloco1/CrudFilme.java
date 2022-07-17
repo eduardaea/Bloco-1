@@ -44,6 +44,16 @@ public class CrudFilme extends Catalogo {
 	
 	@Override
 	public void visualizar() {
-		
+		for (Filmes exibir: listFilmes ) {
+			System.out.println("**************************************************");
+			System.out.print("Titulo: "+exibir.getTitulo());
+			System.out.print("\nGenero: "+exibir.getGenero());
+			System.out.print("\nClassificacao indicativa: "+exibir.getClassificacaoindicativa());
+			System.out.print("\nelenco: "+exibir.getElenco());
+			System.out.print("\nDiretor: "+exibir.getDiretor());
+			System.out.print("\nAno: "+exibir.getAno());
+			System.out.println("\n**************************************************");
+		}	
 	}
 }
+	
