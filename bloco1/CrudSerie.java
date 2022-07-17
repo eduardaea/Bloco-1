@@ -37,14 +37,14 @@ public class CrudSerie extends Catalogo {
 		String temporadas = leia.nextLine();
 		
 		Series series = new Series(titulo,genero,sinopse,classificacao,duracao,episodios,temporadas);
-		this.generico.add(series);
+		this.listSeries.add(series);
 		
 	}
 	
 	
 	@Override
 	public void visualizar() {
-		System.out.println(generico);
+		System.out.println(listSeries);
 	}
 	
 	

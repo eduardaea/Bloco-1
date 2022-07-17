@@ -34,13 +34,25 @@ public class CrudDocumentario extends Catalogo{
 	
 	
 	Documentario documentario = new Documentario(titulo,genero,sinopse,classificacao,tipo,duracao);
-	this.generico.add(documentario);
+	this.listDocumentario.add(documentario);
 	
 }
 
 
 @Override
-public void visualizar() {
-	System.out.println(generico);
- 	} 
+	public void visualizar() {
+		//( String tipo, int duracao
+		
+		for (Documentario exibir: listDocumentario ) {
+			System.out.print("Titulo: "+exibir.getTitulo());
+			System.out.print("\nGenero: "+exibir.getGenero());
+			System.out.print("\nClassificacao indicativa: "+exibir.getClassificacaoindicativa());
+			System.out.print("\nSinopse: "+exibir.getSinopse());
+			System.out.print("\nTipo: "+exibir.getTipo());
+			System.out.print("\nDuracao"+exibir.getDuracao());		
+			
+		}
+		
+	
+	 } 
 }

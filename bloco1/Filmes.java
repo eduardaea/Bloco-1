@@ -13,27 +13,27 @@ public class Filmes extends ProgramasTv {
 		this.ano = ano;
 	}
 
-	protected String getElenco() {
+	public String getElenco() {
 		return elenco;
 	}
 
-	protected void setElenco(String elenco) {
+	public void setElenco(String elenco) {
 		this.elenco = elenco;
 	}
 
-	protected String getDiretor() {
+	public String getDiretor() {
 		return diretor;
 	}
 
-	protected void setDiretor(String diretor) {
+	public void setDiretor(String diretor) {
 		this.diretor = diretor;
 	}
 
-	protected String getAno() {
+	public String getAno() {
 		return ano;
 	}
 
-	protected void setAno(String ano) {
+	public void setAno(String ano) {
 		this.ano = ano;
 	}
 	

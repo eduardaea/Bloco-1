@@ -18,19 +18,19 @@ public class Series extends ProgramasTv {
 	public String getDuracao() {
 		return duracao;
 	}
-	protected void setDuracao(String duracao) {
+	public void setDuracao(String duracao) {
 		this.duracao = duracao;
 	}
-	protected String getEpisodios() {
+	public String getEpisodios() {
 		return episodios;
 	}
-	protected void setEpisodios(String episodios) {
+	public void setEpisodios(String episodios) {
 		this.episodios = episodios;
 	}
-	protected String getTemporadas() {
+	public String getTemporadas() {
 		return temporadas;
 	}
-	protected void setTemporadas(String temporadas) {
+	public void setTemporadas(String temporadas) {
 		this.temporadas = temporadas;
 	}
 	

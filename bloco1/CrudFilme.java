@@ -37,13 +37,13 @@ public class CrudFilme extends Catalogo {
 		
 		
 		Filmes filme = new Filmes(titulo,genero,sinopse,classificacao,elenco,diretor,ano);
-		this.generico.add(filme);
+		this.listFilmes.add(filme);
 		
 	}
 	
 	
 	@Override
 	public void visualizar() {
-		System.out.println(generico);
-	 	} 
+		
 	}
+}
