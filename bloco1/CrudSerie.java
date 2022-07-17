@@ -44,7 +44,16 @@ public class CrudSerie extends Catalogo {
 	
 	@Override
 	public void visualizar() {
-		System.out.println(listSeries);
+		for(Series exibir: listSeries) {
+			System.out.println("**************************************************");
+			System.out.print("Titulo: "+exibir.getTitulo());
+			System.out.print("\nGenero: "+exibir.getGenero());
+			System.out.print("\nClassificacao indicativa: "+exibir.getClassificacaoindicativa());
+			System.out.print("\nDuracao: "+exibir.getDuracao());
+			System.out.print("\nEpisodios: "+exibir.getEpisodios());
+			System.out.print("\nTemporadas: "+exibir.getTemporadas());
+			System.out.println("\n**************************************************");
+		}
 	}
 	
 	
