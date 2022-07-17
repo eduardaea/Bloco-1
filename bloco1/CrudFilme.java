@@ -52,6 +52,8 @@ public class CrudFilme extends Catalogo {
 			System.out.print("\nelenco: "+exibir.getElenco());
 			System.out.print("\nDiretor: "+exibir.getDiretor());
 			System.out.print("\nAno: "+exibir.getAno());
+			System.out.print("\nSinopse: "+exibir.getSinopse());
+			
 			System.out.println("\n**************************************************");
 		}	
 	}

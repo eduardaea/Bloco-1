@@ -1,7 +1,7 @@
 package bloco1;
 
 public interface Programas {
-	
+		
 	public String getTitulo();
 	public void setTitulo(String titulo);
 
