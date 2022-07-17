@@ -1,13 +1,13 @@
 package bloco1;
 
-public class Series extends ProgramasTv {
+public class Series extends ProgramasTv{
 	
-	private String duracao;
-	private String episodios;
-	private String temporadas;
+	private int duracao;
+	private int episodios;
+	private int temporadas;
 	
 	
-	public Series(String titulo,String genero,String sinopse, String classificacaoindicativa,String duracao,String episodios,String temporadas) {
+	public Series(String titulo,String genero,String sinopse, String classificacaoindicativa,int duracao,int episodios,int temporadas) {
 		 super(titulo,genero,sinopse,classificacaoindicativa);
 		 this.duracao = duracao;
 		 this.episodios = episodios;
@@ -15,25 +15,23 @@ public class Series extends ProgramasTv {
 	}
 	
 		
-	public String getDuracao() {
+	public int getDuracao() {
 		return duracao;
 	}
-	public void setDuracao(String duracao) {
+	protected void setDuracao(int duracao) {
 		this.duracao = duracao;
 	}
-	public String getEpisodios() {
+	protected int getEpisodios() {
 		return episodios;
 	}
-	public void setEpisodios(String episodios) {
+	protected void setEpisodios(int episodios) {
 		this.episodios = episodios;
 	}
-	public String getTemporadas() {
+	protected int getTemporadas() {
 		return temporadas;
 	}
-	public void setTemporadas(String temporadas) {
+	protected void setTemporadas(int temporadas) {
 		this.temporadas = temporadas;
 	}
-	
-	
 	
 }
