@@ -47,7 +47,7 @@ public class CrudDocumentario extends Catalogo {
 		for (Documentario exibir: listDocumentario ) {
 			System.out.print("Título: "+exibir.getTitulo());
 			System.out.print("\nGênero: "+exibir.getGenero());
-			System.out.print("\nClassificaÃ§Ã£o indicativa: "+exibir.getClassificacaoindicativa());
+			System.out.print("\nClassificação indicativa: "+exibir.getClassificacaoindicativa());
 			System.out.print("\nSinopse: "+exibir.getSinopse());
 			System.out.print("\nTipo: "+exibir.getTipo());
 			System.out.print("\nDuração(em minutos): "+exibir.getDuracao());		
