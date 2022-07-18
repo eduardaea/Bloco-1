@@ -49,6 +49,10 @@ Scanner leia = new Scanner(System.in);
 	
 	@Override
 	public void visualizar() {
+		if(listSeries.size()==0) {
+			throw new RuntimeException("\nO Catalogo esta vazio, adicione uma nova Serie: ");
+		}
+		
 		for(Series exibir: listSeries) {
 			System.out.println("**************************************************");
 			System.out.print("Título: "+exibir.getTitulo());

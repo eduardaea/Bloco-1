@@ -45,7 +45,10 @@ public class CrudFilme extends Catalogo {
 @Override
 public void visualizar() {
 	
-
+	if(listFilmes.size()==0) {
+		throw new RuntimeException("\nO Catalogo esta vazio, adicione um novo Filme: ");
+	}
+	
 	for (Filmes exibir: listFilmes ) {
 	
 		System.out.println("**************************************************");

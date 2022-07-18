@@ -28,12 +28,19 @@ public class ApresentarCrud {
 				int op1 = input.nextInt();
 				System.out.println("\n**************************************************");
 					if(op1 == 1) {
+						try {
+					
 						filme.criar();
-					}
+						}
+						catch(RuntimeException error){
+							System.err.println("\n"+error.getMessage());
+							System.out.println("\n****************************************************");
+						};
+					}	
 					else if(op1 ==2) {
 						filme.visualizar();
 					}
-					else {System.out.println("Opção Inválida! Digite novamente sua escolha: ");
+					else {System.err.println("Opção Inválida! Digite novamente sua escolha: ");
 					op1= input.nextInt();
 					}
 			break;
@@ -43,47 +50,60 @@ public class ApresentarCrud {
 				System.out.println("\nPara visualizar o Catálogo de Séries digite 2: ");
 				int op2 = input.nextInt();
 				System.out.println("\n**************************************************");
-					if(op2 == 1) try{
+					if(op2 == 1) {
+						try{
+					
 						serie.criar();
-					}catch(InputMismatchException inputMismatchException ) {
+						}
+						catch(InputMismatchException inputMismatchException ) {
 						System.err.printf("\nExceção: %s",inputMismatchException);
 						input.nextLine();
-						System.out.println("\nVocê deve entrar com um número inteiro. Por favor tente novamente!");
+						System.err.println("\nVocê deve entrar com um número inteiro. Por favor tente novamente!");
 						}
+					}
 					else if(op2 ==2)  {
-					
+						try {
 						serie.visualizar();
+						}
+						
+						catch(RuntimeException error){
+						System.err.println("\n"+error.getMessage());
+						System.out.println("\n****************************************************");
+						};
 						
 					}
 					
-					else {System.out.println("Opção Inválida! Digite novamente sua escolha: ");
+					else {System.err.println("Opção Inválida! Digite novamente sua escolha: ");
 					op2 = input.nextInt();	}	
-			break;
+					break;
 			case 3:
 				System.out.println("**************************************************");
 				System.out.println("\nPara criar um novo Documentário, digite 1: ");
 				System.out.println("\nPara visualizar o Catálogo de Documentários, digite 2: ");
 				int op3 = input.nextInt();
 				System.out.println("\n**************************************************");
-					if(op3 ==1) try{
+					if(op3 ==1) {
+						try{
+					
 					documentario.criar();
-					}catch(InputMismatchException inputMismatchException ) {
+						}
+						catch(InputMismatchException inputMismatchException ) {
 						System.err.printf("\nExceção: %s",inputMismatchException);
 						input.nextLine();
-						System.out.println("\nVoce deve entrar com um numero inteiro. Por favor tente novamente!");
+						System.err.println("\nVoce deve entrar com um numero inteiro. Por favor tente novamente!");
 						}
+					}
 					else if(op3 ==2) {
 						try {
 						documentario.visualizar();
 						}
 						catch(RuntimeException error){
-							System.out.println("\n****************************************************");
-							System.out.println("\n"+error.getMessage());
+							System.err.println("\n"+error.getMessage());
 							System.out.println("\n****************************************************");
 						};
 				
 					}
-					else {System.out.println("Opção Invalida! Digite novamente sua escolha: ");
+					else {System.err.println("Opção Invalida! Digite novamente sua escolha: ");
 					op3 = input.nextInt();	}
 			break;
 			}
